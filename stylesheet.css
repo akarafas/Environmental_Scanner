@@ -1,0 +1,17 @@
+/* .section {
+    color: green;
+    font-weight: 900;
+} */
+.container {
+    background-color: lightgreen;
+    height: 100px;
+}
+
+.card {
+    
+}
+h1 {
+    color:gray;
+    text-align: center;
+    margin-top: 20px;
+}
