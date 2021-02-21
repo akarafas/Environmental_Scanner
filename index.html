@@ -6,84 +6,80 @@
         <title>Tab Title</title>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css"/>
         <link rel="stylesheet" href="stylesheet.css"/>
-    </head>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+      </head>
     <body>
-       <!--Header-->
-      <section id="top">
-        <div class="top container">
-          <div class="nav-bar">
-            <div class="brand">
-              <a href="#hero"><h1><span>C</span>oncious <span>F</span>ood</span></h1></a>
-            </div>
-            <div class="nav-list">
-              <div class="hamburger"><div class="bar"></div></div>
-              <ul>
-                  <li><a href="#hero">Calculator</a></li>
-                  <li><a href="#about">Plan</a></li>
-              </ul>
-            </div>
-        </div>
-    </div>
-</section>
-<!--End Header-->
-<!-- Hero Section-->
-<section id="hero">
-    <div class="hero container">
-        <div class="">
-            <h1>Know <span></span></h1>
-            <h1>Your <span></span></h1>
-            <h1>Food<span></span></h1>
-        </div>
-    </div>
-</section>
-<!--End of Hero-->
-        <section class="section">
-            <div class="card">
+        <section class="section" style="background-image: url('background.jpg'); background-repeat: no-repeat; background-attachment: fixed;
+            background-size: cover;">
+            <div class="card" style="opacity: 70%;">
                 <div class="card-content">
-                    <h1 class="title is-1 has-text-centered	">EarthScanner</h1>
+                    <h1 class="title is-1 has-text-centered"><strong>HealthHacks</strong></h1>
                 </div>
             </div>
-            <div class="box has-background-primary">
-                <article class="media">
-                    <div class="content">
+            <div class="box has-background-primary" style="opacity: 95%;">
+                <div class="media" style="margin-left: 7%;">
+                    <div class="column has-text-centered">
                       <p>
-                        <strong class="subtitle is-3">Scan In Your Image</strong>
+                        <strong class="subtitle is-3">How Healthy is Your Food?</strong>
                         <br>
                         Enter in your grocery items!                        
                       </p>
                       <div class="field">
-                        <label class="label">Grocery Item</label>
-                        <div class="control">
-                          <input class="input" type="text" placeholder="Text input">
-                        </div>
+                        <!-- <label class="label">Grocery Item</label> -->
+                        <!-- <div class="control"> -->
+                          <input class="input" type="text" placeholder="Type here" id="item" size="5"> 
+                        <!-- </div> -->
                       </div>
-                      <div class="field is-grouped">
-                        <div class="control">
-                          <button class="button is-link">Add</button>
+                      <div class="field is-grouped" style="margin-left: 35%;">
+                        <div class="alter control">
+                          <button class="addButton button is-link">Add</button>
                         </div>
                         <div class="control">
-                          <button class="button is-link is-light">Cancel</button>
+                          <button class="doneButton button is-link is-light">Done</button>
                         </div>
-                      </div>
-                      <div class="control">
-                        <textarea class="textarea" readonly>This content is readonly</textarea>
                       </div>
                     </div>
-                  </div>
-                </article>
-              </div>
-              <div class="box has-background-info">
-                <article class="media">
-                    <div class="content">
+                    <div class="column">
+                      <div class="tables" style="opacity: 95%;">
+                        <p> To see how healthy your food is, enter each of your grocery items in the input box. Press the "Add" button and your item will appear in the list. When you have all your
+                            items in the list, press the "Done" button to total up all the health benefits your groceries had.
+                        </p>
+                        <br>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box has-background-info" style="opacity: 95%;">
+                <div class="media" style="margin-left: 35%;">
+                    <div class="content has-text-centered">
                       <p>
                         <strong class="subtitle is-3 has-text-centered">Totals</strong>
-                        <br>
-                        Enter in your grocery items!                        
+                        <div class="columns has-text-centered is-grouped">
+                          <div class="column box">
+                            <span class="material-icons">emoji_events</span>
+                            <div class="subtitle is-6">NOVA</div>
+                          <!-- <br> -->
+                          </div><div class="column box">
+                            <span class="material-icons">star</span>
+                            <div class="subtitle is-6">Nutrition</div>
+                          <!-- <br> -->
+                          </div><div class="column box">
+                            <span class="material-icons">battery_charging_full</span>
+                            <div class="subtitle is-6">Energy</div>
+                          <!-- <br> -->
+                          </div><div class="column box">
+                            <span class="material-icons">cloud</span>
+                            <div class="subtitle is-6">Carbon Footprint</div>
+                          </div>
+                        </div>
+                        <!-- NOVA sc, nutrition score, energy, carbon -->
                       </p>
                     </div>
-                  </div>
-                </article>
-              </div>
+                </div>
+            </div>
         </section>
+        <script src="node_modules/jquery/dist/jquery.js"></script>
+        <!-- <script src="data.js"></script> -->
+        <script src="render.js"></script>
     </body> 
 </html>
