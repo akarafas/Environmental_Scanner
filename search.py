@@ -11,7 +11,7 @@ def fix_string(phrase):
 def find_matches(search_phrase):
 	possibilities = []
 	search_phrase = fix_string(search_phrase)
-	with open ('final_data.jsonl', 'r', encoding = 'utf-8') as data:
+	with open ('final_data_50.jsonl', 'r', encoding = 'utf-8') as data:
 		for line in data:
 			line = json.loads(line)
 			line_search = fix_string(line['product_name'])
