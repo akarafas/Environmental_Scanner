@@ -3,9 +3,8 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Tab Title</title>
+        <title>Inside the Bag</title>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css"/>
-        <link rel="stylesheet" href="stylesheet.css"/>
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
       </head>
     <body>
@@ -13,10 +12,10 @@
             background-size: cover;">
             <div class="card" style="opacity: 70%;">
                 <div class="card-content">
-                    <h1 class="title is-1 has-text-centered"><strong>HealthHacks</strong></h1>
+                    <h1 class="title is-1 has-text-centered"><strong>Inside the Bag</strong></h1>
                 </div>
             </div>
-            <div class="box has-background-primary" style="opacity: 95%;">
+            <div class="box has-background-primary" style="opacity: 95%; height: 500px;">
                 <div class="media" style="margin-left: 7%;">
                     <div class="column has-text-centered">
                       <p>
@@ -50,27 +49,41 @@
                 </div>
             </div>
             <div class="box has-background-info" style="opacity: 95%;">
-                <div class="media" style="margin-left: 35%;">
+                <div class="media has-text-centered" style="text-align: center; margin-left:25%">
                     <div class="content has-text-centered">
                       <p>
                         <strong class="subtitle is-3 has-text-centered">Totals</strong>
-                        <div class="columns has-text-centered is-grouped">
-                          <div class="column box">
-                            <span class="material-icons">emoji_events</span>
-                            <div class="subtitle is-6">NOVA</div>
+                        <div class="columns has-text-centered is-3">
+                          <div class="column is-3">
+                            <div class=box>
+                             <span class="material-icons">emoji_events</span>
+                             <div class="subtitle is-6">NOVA Score</div>
+                             <div class="nova_total"></div>
+                            </div>
                           <!-- <br> -->
-                          </div><div class="column box">
-                            <span class="material-icons">star</span>
-                            <div class="subtitle is-6">Nutrition</div>
+                          </div><div class="column is-3">
+                            <div class=box>
+                              <span class="material-icons">star</span>
+                              <div class="subtitle is-6">Nutrition Score</div>
+                              <div class="nut_total"></div>
+                            </div>
                           <!-- <br> -->
-                          </div><div class="column box">
-                            <span class="material-icons">battery_charging_full</span>
-                            <div class="subtitle is-6">Energy</div>
+                          </div><div class="column is-3">
+                            <div class=box>
+                              <span class="material-icons">battery_charging_full</span>
+                              <div class="subtitle is-6">Energy Amount</div>
+                              <div class="energy_total"></div>
+
+                            </div>
                           <!-- <br> -->
-                          </div><div class="column box">
-                            <span class="material-icons">cloud</span>
-                            <div class="subtitle is-6">Carbon Footprint</div>
+                          </div><div class="column is-3">
+                            <div class=box>
+                              <span class="material-icons">cloud</span>
+                              <div class="subtitle is-6">Carbon Footprint</div>
+                              <div class="carbon_total"></div>
+                            </div>
                           </div>
+                          <div class="column"></div>
                         </div>
                         <!-- NOVA sc, nutrition score, energy, carbon -->
                       </p>
@@ -79,7 +92,7 @@
             </div>
         </section>
         <script src="node_modules/jquery/dist/jquery.js"></script>
-        <!-- <script src="data.js"></script> -->
+        <script src="final_data_50.js"></script>
         <script src="render.js"></script>
     </body> 
 </html>
